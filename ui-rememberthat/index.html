@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Remember<span>That</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="menu">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="close">
+                <ul class="primary-nav">
+                    <li class="current"><a href="">Home</a></li>
+                    <li><a href="">Fueatures</a></li>
+                    <li><a href="">Pricing</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li><a href="">Contact</a></li>
+                    <li class="go-premium-cta"><a href="">Go Premuim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's Nitty &amp; Gritty</p>
+                <h1>A Task App That Doesn't Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try For Free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="watch a video">
+                        Watch a Video 
+                    </a>
+                </div>
+            </div>
+            <img src="images/illustration.svg" alt="illustration">
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaboration</li>
+                <li>Other awesome features</li>
+            </ul>
+            <img src="images/holding-phone.jpg" alt="man holding phone">
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem illo hic aperiam veritatis inventore odio, alias neque consequuntur accusantium reiciendis.
+                    </blockquote>
+                    <cite>- jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem illo hic aperiam veritatis inventore odio, alias neque consequuntur accusantium reiciendis.
+                    </blockquote>
+                    <cite>- jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem illo hic aperiam veritatis inventore odio, alias neque consequuntur accusantium reiciendis.
+                    </blockquote>
+                    <cite>- jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" class="send-message-cta" value="Send Message">
+
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103859.79833836803!2d45.37765499999999!3d35.56311815000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40002c0536d143b1%3A0xf791750d4e215dea!2sSulaymaniyah!5e0!3m2!1sen!2siq!4v1628511542095!5m2!1sen!2siq" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <script>
+        const mobileBtn=document.querySelector('#mobile-cta')
+        const nav=document.querySelector('nav')
+        const mobileBtnExit=document.querySelector('#mobile-exit')
+
+        mobileBtn.addEventListener('click',()=>{
+            nav.classList.add('menu-btn')
+        })
+        mobileBtnExit.addEventListener('click',()=>{
+            nav.classList.remove('menu-btn')
+        })
+    </script>
+</body>
+</html>
